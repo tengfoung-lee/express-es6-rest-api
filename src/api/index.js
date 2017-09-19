@@ -19,5 +19,9 @@ export default ({ config, db }) => {
 		});
 	});
 
+	api.get('/pr-test-1', (req, res) => {
+		res.json({ version });
+	});
+
 	return api;
 }
