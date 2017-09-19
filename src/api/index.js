@@ -13,21 +13,10 @@ export default ({ config, db }) => {
 		res.json({ version });
 	});
 
-	api.get('/v2', (req, res) => {
-		res.json({ version });
+	api.get('/helloworld', (req, res) => {
+		res.json({
+			message: "hello world!"
+		});
 	});
-
-	api.get('/v3', (req, res) => {
-		res.json({ version });
-	});
-
-	api.get('/v4', (req, res) => {
-		res.json({ version });
-	});
-
-	api.get('/v5', (req, res) => {
-		res.json({ version });
-	});
-
 	return api;
 }
