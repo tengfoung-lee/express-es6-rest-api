@@ -15,9 +15,8 @@ export default ({ config, db }) => {
 
 	api.get('/helloworld', (req, res) => {
 		res.json({
-			message: 'hello world!'
+			message: "hello world!"
 		});
 	});
-
 	return api;
 }
